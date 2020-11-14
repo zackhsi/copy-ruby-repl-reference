@@ -38,7 +38,7 @@ suite("NamespaceBuilder", () => {
     let source = ["module Mod", "  class Klass", "    def instance_m"].join(
       "\n"
     );
-    namespaceEquals(source, "Mod::Klass#instance_m");
+    namespaceEquals(source, "Mod::Klass.instance_m");
   });
 
   test("handles class methods", () => {
@@ -119,7 +119,7 @@ suite("NamespaceBuilder", () => {
       "    CONSTANT = 123",
       "    def instance_m",
     ].join("\n");
-    namespaceEquals(source, "Mod::Klass#instance_m");
+    namespaceEquals(source, "Mod::Klass.instance_m");
   });
 
   test("properly handles dedents", () => {
@@ -131,7 +131,7 @@ suite("NamespaceBuilder", () => {
       "    end",
       "    def other_method",
     ].join("\n");
-    namespaceEquals(source, "Mod::Klass#other_method");
+    namespaceEquals(source, "Mod::Klass.other_method");
   });
 
   test("ignores comments", () => {

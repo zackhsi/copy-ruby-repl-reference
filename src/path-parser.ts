@@ -95,7 +95,7 @@ const MATCHERS = [
   new Matcher({
     type: "instance_method",
     expression: "def\\s+([\\w:]+)",
-    separator: "#",
+    separator: ".",
   }),
   new Matcher({ type: "constant", expression: "([A-Z][\\w]*)\\s+=" }),
 ];
