@@ -1,6 +1,6 @@
 {
-  "name": "copy-ruby-repl",
-  "displayName": "copy-ruby-repl",
+  "name": "copy-ruby-repl-reference",
+  "displayName": "copy-ruby-repl-reference",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:copy-ruby-repl.helloWorld"
+    "onCommand:copy-ruby-repl-reference.copy"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "copy-ruby-repl.helloWorld",
-        "title": "Hello World"
+        "command": "copy-ruby-repl-reference.copy",
+        "title": "Copy Ruby REPL Reference"
       }
     ]
   },
@@ -47,5 +47,8 @@
     "ts-loader": "^8.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0"
   }
 }
