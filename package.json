@@ -1,8 +1,13 @@
 {
   "name": "copy-ruby-repl-reference",
-  "displayName": "copy-ruby-repl-reference",
-  "description": "",
-  "version": "0.0.1",
+  "displayName": "Copy Ruby REPL Reference",
+  "description": "Copy Ruby REPL-friendly references",
+  "version": "0.1.0",
+  "publisher": "zackhsi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zackhsi/copy-ruby-repl-reference"
+  },
   "engines": {
     "vscode": "^1.51.0"
   },
