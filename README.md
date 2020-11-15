@@ -30,3 +30,21 @@ The extension page does not [look great](https://code.visualstudio.com/api/refer
 ### 0.1.0
 
 Initial release.
+
+## Development
+
+Develop through the Run View (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>D</kbd>).
+
+- To run the extension, select "Run Extension."
+
+- To run tests, select "Extension Tests."
+
+To install the extension locally:
+
+```bash
+# Create VSIX package.
+$ vsce publish
+
+# Install VSIX package.
+$ code --install-extension copy-ruby-repl-reference-{VERSION}.vsix
+```
